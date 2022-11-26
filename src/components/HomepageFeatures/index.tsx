@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Based on openzeppelin standard',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/open_zepplin.png').default,
     description: (
       <>
         All contract implementation is based on openzeppelin contracts and will be updated in future aligning with openzeppelin.
@@ -24,6 +24,15 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         You can use your favourite ethereum library without any issue or any work. Currently we are supporting ethers and web3.js.
+      </>
+    ),
+  },
+  {
+    title: 'Tested',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        All implementation are tested from end to end for different edge cases. So you only need to focus on business logic not writing code for smart contract calls.
       </>
     ),
   },
@@ -74,17 +83,17 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({ title, Svg, description }: FeatureItem) {
+function Feature({ title, Svg, description, Img }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+      <div className="text--center" style={{ marginBottom: '4rem' }}>
+        {/* Img!=null? <img src="Img" />: <Svg className={styles.featureSvg} role="img" /> */}
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
-    </div>
+    </div >
   );
 }
 
