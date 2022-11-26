@@ -1,10 +1,10 @@
 ---
-sidebar_position: 2
+sidebar_position: 10
 ---
 
 # Transaction Data
 
-EthContracts abstracts the smart contracts calling part but there might be some times when you need to debug data being sent because your smart contract are throwing some errors or due to any different reason.
+**EthContracts.js** abstracts the smart contracts calling part but there might be some times when you need to debug data being sent because your smart contract are throwing some errors or due to any different reason.
 
 EthContracts allows you to get the transaction data using a property `transactionData`. 
 
