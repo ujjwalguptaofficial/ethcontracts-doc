@@ -46,7 +46,7 @@ import { ERC20, EthersClient } from "@opweb3/ethcontracts";
 const token = new ERC20(<tokenAddress>);
 await token.init(new EthersClient(<wallet provider>));
 
-const [getTransactionHash, getTransactionReceipt] = await token.transfer(<toAddress>, <amount>);
+const [getTransactionHash, getTransactionReceipt] =  token.transfer(<toAddress>, <amount>);
 
 const txhash = await getTransactionHash();
 const txReceipt = await getTransactionReceipt();
