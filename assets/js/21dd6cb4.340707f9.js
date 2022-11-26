@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclassic=self.webpackChunkclassic||[]).push([[111],{8485:s=>{s.exports=JSON.parse('{"label":"hello","permalink":"/ethcontracts-doc/blog/tags/hello","allTagsPath":"/ethcontracts-doc/blog/tags","count":2}')}}]);
