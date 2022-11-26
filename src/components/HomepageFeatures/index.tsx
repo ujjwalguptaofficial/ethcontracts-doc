@@ -10,38 +10,71 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Based on openzeppelin standard',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        All contract implementation is based on openzeppelin contracts and will be updated in future aligning with openzeppelin.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Supports for multiple ethers client ',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        You can use your favourite ethereum library without any issue or any work. Currently we are supporting ethers and web3.js.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Extensible',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        You can easily customize the contracts implementation as per your need.
+      </>
+    ),
+  },
+  {
+    title: 'Automatic ABI management',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        No need to worry about ABI. We handle it internally with flexibility to customize if needed - making everything super easy
+      </>
+    ),
+  },
+  {
+    title: 'Treeshakable',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        Our package is Treeshakable - Only used codes will be included.
+      </>
+    ),
+  },
+  {
+    title: 'Free and MIT License',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        Everything is free and open source with MIT License. Use it without worry.
+      </>
+    ),
+  },
+  {
+    title: 'Strong typescript support',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        We understand the importance of typings and that's why we provide very strong typings support.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
