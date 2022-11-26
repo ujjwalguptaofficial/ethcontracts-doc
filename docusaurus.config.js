@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'EthContracts',
   tagline: 'Readymade ethereum contracts implementation with support for all ethereum library. ',
-  url: 'https://invalid.com',
-  baseUrl: '/',
+  url: 'https://ujjwalguptaofficial.github.io',
+  baseUrl: '/ethcontracts-doc/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
