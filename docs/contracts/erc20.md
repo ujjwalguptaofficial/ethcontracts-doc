@@ -9,7 +9,7 @@ ERC20 is a class which contains all different methods required for standard **er
 ERC20 instance can be created by passing token address in constructor. 
 
 ```
-import { EthersClient, Web3Client, ERC20 } from "@opweb3/ethcontracts";
+import { ERC20 } from "@opweb3/ethcontracts";
 
 const token = new ERC20(<tokenAddress>);
 ```
@@ -21,12 +21,14 @@ initiate token with provider.
 ### ethers.js
 
 ```
+import { EthersClient, ERC20 } from "@opweb3/ethcontracts";
 await token.init(new EthersClient(<wallet provider>));
 ```
 
 ### web3.js
 
 ```
+import { Web3Client, ERC20 } from "@opweb3/ethcontracts";
 await token.init(new Web3Client(<wallet provider>));
 ```
 
@@ -102,7 +104,7 @@ const txReceipt = await getTransactionReceipt();
 
 ## transferFrom
 
-transfer method can be used to transfer amount to another user by a spender or owner.
+transferFrom method can be used to transfer amount to another user by a spender or owner.
 
 ```
 const [getTransactionHash, getTransactionReceipt] = await token.transferFrom(<fromAddress>,<toAddress>, <amount>);
