@@ -9,7 +9,8 @@ sidebar_position: 10
 EthContracts allows you to get the transaction data using a property `transactionData`. 
 
 ```
-import { ERC20, EthersClient } from "@opweb3/ethcontracts";
+import { ERC20 } from "@ethcontracts/core";
+import { EthersClient } from "@ethcontracts/ethers";
 
 const token = new ERC20(<tokenAddress>);
 await token.init(new EthersClient(<wallet provider>));

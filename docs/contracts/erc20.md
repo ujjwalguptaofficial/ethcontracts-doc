@@ -9,7 +9,7 @@ You can interact with erc20 token by creating instance of class `ERC20`. ERC20 c
 ERC20 instance can be created by passing token address in constructor. 
 
 ```
-import { ERC20 } from "@opweb3/ethcontracts";
+import { ERC20 } from "@ethcontracts/core";
 
 const token = new ERC20(<tokenAddress>);
 ```
@@ -21,14 +21,16 @@ initiate token with provider.
 ### ethers.js
 
 ```
-import { EthersClient, ERC20 } from "@opweb3/ethcontracts";
+import { ERC20 } from "@ethcontracts/core";
+import { EthersClient } from "@ethcontracts/ethers";
 await token.init(new EthersClient(<wallet provider>));
 ```
 
 ### web3.js
 
 ```
-import { Web3Client, ERC20 } from "@opweb3/ethcontracts";
+import { ERC20 } from "@ethcontracts/core";
+import { Web3Client } from "@ethcontracts/web3";
 await token.init(new Web3Client(<wallet provider>));
 ```
 

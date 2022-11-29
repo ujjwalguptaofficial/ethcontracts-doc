@@ -18,7 +18,8 @@ Methods like - `getBalance`, `getDecimals` etc are read transaction.
 Calling read transaction in EthContracts.js is very simple. Let's see an example of calling `getBalance` method
 
 ```
-import { ERC20, EthersClient } from "@opweb3/ethcontracts";
+import { ERC20 } from "@ethcontracts/core";
+import { EthersClient } from "@ethcontracts/ethers";
 
 const token = new ERC20(<tokenAddress>);
 await token.init(new EthersClient(<wallet provider>));
@@ -41,7 +42,8 @@ EthContracts write transaction returns hook(inspired by react) which allows you 
 Let's see an example -
 
 ```
-import { ERC20, EthersClient } from "@opweb3/ethcontracts";
+import { ERC20 } from "@ethcontracts/core";
+import { EthersClient } from "@ethcontracts/ethers";
 
 const token = new ERC20(<tokenAddress>);
 await token.init(new EthersClient(<wallet provider>));
