@@ -8,8 +8,29 @@ In this get started tutorial - we will learn how to install, setup and interact 
 
 ## Installation
 
+You need to install two package
+
+### 1. Core package
+
+core package contains all the contracts and core implementation
+
 ```
-npm i @opweb3/ethcontracts
+npm i @ethcontracts/core
+```
+
+### 2. Client package
+
+Client package is a client wrapper for ethereum libraries like **ethers.js** and **web3.js**. This allows you to use any of your favourite package.
+
+#### ethers
+
+```
+npm i @ethcontracts/ethers
+```
+#### web3js
+
+```
+npm i @ethcontracts/web3
 ```
 
 ## Setup
@@ -18,13 +39,13 @@ You can use any ethereum library. Currently we support ethers and web3.js.
 ### ethers
 
 ```
-import { EthersClient } from "@opweb3/ethcontracts";
+import { EthersClient } from "@ethcontracts/ethers";
 ```
 
 ### web3js
 
 ```
-import { Web3Client } from "@opweb3/ethcontracts";
+import { Web3Client } from "@ethcontracts/web3";
 ```
 
 ## ERC20 balance
@@ -34,7 +55,8 @@ Let's see how we can get balance of an erc20 token.
 ### ethers.js
 
 ```
-import { EthersClient, ERC20 } from "@opweb3/ethcontracts";
+import { ERC20 } from "@ethcontracts/core";
+import { EthersClient } from "@ethcontracts/ethers";
 import { providers } from "ethers"
 
 // create token with token address
@@ -57,7 +79,8 @@ console.log("balance", balance);
 ### web3.js
 
 ```
-import { Web3Client, ERC20 } from "@opweb3/ethcontracts";
+import { ERC20 } from "@ethcontracts/core";
+import { Web3Client } from "@ethcontracts/web3";
 import Web3 from "web3";
 
 // create token with token address
@@ -86,7 +109,8 @@ It is write transaction which means it changes the state in blockchain transacti
 ### ethers.js
 
 ```
-import { EthersClient, ERC20 } from "@opweb3/ethcontracts";
+import { ERC20 } from "@ethcontracts/core";
+import { EthersClient } from "@ethcontracts/ethers";
 import { providers } from "ethers"
 
 // create token with token address
@@ -117,7 +141,8 @@ const txReceipt = await getTransactionReceipt();
 ### web3.js
 
 ```
-import { Web3Client, ERC20 } from "@opweb3/ethcontracts";
+import { ERC20 } from "@ethcontracts/core";
+import { Web3Client } from "@ethcontracts/web3";
 import Web3 from "web3";
 
 // create token with token address
