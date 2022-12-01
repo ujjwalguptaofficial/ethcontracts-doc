@@ -54,3 +54,41 @@ const txhash = await getTransactionHash();
 const txReceipt = await getTransactionReceipt();
 ```
 
+### Transaction configuration
+
+Every write transaction accepts transaction config as last parameter which is optional. Let's see an example of passing - `gas`
+
+```
+import { ERC20 } from "@ethcontracts/core";
+import { EthersClient } from "@ethcontracts/ethers";
+
+const token = new ERC20(<tokenAddress>);
+await token.init(new EthersClient(<wallet provider>));
+
+const [getTransactionHash, getTransactionReceipt] =  token.transfer(<toAddress>, <amount>,{
+    gas : 5000
+});
+
+const txhash = await getTransactionHash();
+const txReceipt = await getTransactionReceipt();
+```
+
+#### Configuration list
+
+Following options are available to pass in configuration - 
+
+```
+from?: string;
+to?: string;
+value?: number | string | any;
+gasLimit?: number | string;
+gasPrice?: number | string | any;
+data?: string;
+nonce?: number;
+chainId?: number;
+chain?: string;
+hardfork?: string;
+maxFeePerGas?: number | string;
+maxPriorityFeePerGas?: number | string;
+type?: number;
+```
