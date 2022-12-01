@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Get started
 
-In this get started tutorial - we will learn how to install, setup and interact with contract api. 
+In this get started tutorial - we will learn how to install, setup and interact with contract api. We will particular learn how we can interact with `ERC20` contract.
 
 ## Installation
 
@@ -168,6 +168,10 @@ const txHash = await getTransactionHash();
 // get tx receipt
 const txReceipt = await getTransactionReceipt();
 ```
+
+You can also configure transaction like passing `gas`, `chain` etc. Have a look at this doc - [Transaction configuration](concepts/transaction-type#transaction-configuration)
+
+👉 While this tutorial covers `ERC20`, all other contract types like `ERC721` and `ERC1155` are similar and can be integrated easily.
 
 ## Need more help ? Here are few links -
 

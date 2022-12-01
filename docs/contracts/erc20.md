@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+keywords: [erc20, smart contracts, ethereum, polygon]
 ---
 
 # ERC20
