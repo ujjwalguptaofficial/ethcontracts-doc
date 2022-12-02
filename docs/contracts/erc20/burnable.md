@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-keywords: [erc20, smart contracts, ethereum, polygon]
+keywords: [erc20, burnable, smart contracts, ethereum, polygon]
 ---
 
 # ERC20 Burnable
